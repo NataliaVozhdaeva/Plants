@@ -1,0 +1,213 @@
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    padding: 0 25px;
+  }
+  .section-title {
+    max-width: 330px;
+
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .city-btn {
+    max-width: 330px;
+  }
+
+  .contact-form {
+    max-width: 330px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .wrapper {
+    max-width: 380px;
+    margin: auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+
+  .header {
+    overflow-x: hidden;
+  }
+
+  .header-logo {
+    padding-top: 4px;
+    padding-left: 20px;
+  }
+
+  .nav {
+    right: -25px;
+  }
+
+  .welcome {
+    padding: 0 0 24px;
+
+    background: none;
+  }
+
+  .welcome-title {
+    font-size: 25px;
+    line-height: 140%;
+    margin-bottom: 20px;
+  }
+
+  .welcome-description {
+    margin: 0 0 26px;
+
+    font-size: 16px;
+    line-height: 156%;
+  }
+
+  .welcome-btn {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 34px;
+    padding: 8px 15px;
+
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .about {
+    padding: 30px 0 181px;
+
+    background-size: 150px 155px;
+    background-position: center bottom 27px;
+  }
+
+  .about-title {
+    width: 288px;
+    margin-bottom: -1px;
+  }
+
+  .about-description {
+    font-size: 15px;
+    line-height: 167%;
+  }
+
+  .service {
+    padding: 30px 0 24px;
+  }
+
+  .service-header {
+    margin-bottom: 40px;
+  }
+
+  .btn-container {
+    gap: 10px 9px;
+    margin-bottom: 0;
+  }
+
+  .services-title {
+    width: 187px;
+    margin-bottom: 38px;
+  }
+
+  .service-btn {
+    width: 121px;
+    height: 35px;
+
+    padding: 7px 28px;
+
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 33px;
+  }
+
+  .price {
+    padding: 24px 0 40px;
+    flex-wrap: wrap;
+
+    background: none;
+  }
+
+  .prices-title {
+    margin-bottom: 36px;
+    margin-left: 0;
+
+    text-align: center;
+  }
+
+  .prices-variants {
+    width: 224px;
+    padding: 27px 22px;
+    row-gap: 14px;
+  }
+
+  .btn-prices {
+    width: 180px;
+    height: 50px;
+    padding: 15px 30px;
+
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .contact-form {
+    width: 230px;
+    margin: auto;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-title {
+    margin-top: 19px;
+    margin-bottom: 21px;
+
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .contact-btn {
+    width: 121px;
+    height: 35px;
+    padding: 8px 22px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .contacts-wrapper {
+    min-height: 445px;
+    padding-top: 25px;
+
+    background-size: 100px 124px;
+    background-position: bottom 0 left 49%;
+  }
+
+  .contacts-title {
+    margin: 0 auto 80px;
+  }
+
+  .city-btn {
+    width: 300px;
+    padding-left: 20px;
+  }
+
+  .accordion-btn_city {
+    right: 22px;
+    top: 18px;
+  }
+
+  .footer {
+    padding: 22px 0 7px;
+    row-gap: 5px;
+  }
+
+  .link-RSS {
+    margin-top: 10px;
+  }
+}

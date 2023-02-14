@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  src: local('Inter-Regular'), url('../assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  src: local('Inter-Bold'), url('../assets/fonts/Inter/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inika';
+  font-weight: 400;
+  src: local('Inika-Regular'), url('../assets/fonts/Inika/Inika-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inika';
+  font-weight: 700;
+  src: local('Inika-Bold'), url('../assets/fonts/Inika/Inika-Bold.ttf') format('truetype');
+}
+
+:root {
+  --green: #499a18;
+  --lightgreen: #c1e698;
+  --shadowgreen: #8ba07e;
+  --orange: #e06733;
+  --middlegray: #717171;
+  --darkgray: #636060;
+  --bg: #edf2ec;
+  --black: #010201;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  margin: 0;
+
+  font-family: 'Inika', serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:visited {
+  color: var(--black);
+}
+
+.link:focus {
+  outline: var(--green) solid 1px;
+  color: var(--green);
+}
+
+.link:hover {
+  cursor: pointer;
+  color: var(--orange);
+  transition: 0.3s;
+}
+
+.link:active {
+  color: var(--orange);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  font-family: 'Inika', sans-serif;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: var(--orange);
+}
+
+.non-displayed {
+  display: none;
+}
+
+.coloring-green {
+  color: var(--green);
+}
+
+.coloring-orange {
+  color: var(--orange);
+}
