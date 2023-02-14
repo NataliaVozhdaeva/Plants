@@ -109,48 +109,48 @@
           <div class="service-header">
             <h2 class="section-title services-title">Service and our projects</h2>
             <div class="btn-container">
-              <button class="btn service-btn">Gardens</button>
-              <button class="btn service-btn">Lawn</button>
-              <button class="btn service-btn">Planting</button>
+              <button class="btn service-btn" data-value="garden">Gardens</button>
+              <button class="btn service-btn" data-value="lawn">Lawn</button>
+              <button class="btn service-btn" data-value="planting">Planting</button>
             </div>
           </div>
           <ul class="list service-list">
-            <li class="service-item">
+            <li class="service-item" data-value="garden">
               <a href="" class="link service-link">
                 <img class="service-img" src="./assets/content/aloe.jpg" alt="women do something" width="329" height="350" />
                 <h3 class="service-title">Garden care</h3>
                 <p class="service-description">Lorem Ipsum has been the industry</p>
               </a>
             </li>
-            <li class="service-item">
+            <li class="service-item" data-value="planting">
               <a href="" class="link service-link">
                 <img class="service-img" src="./assets/content/lemon.jpg" alt="women do something" width="329" height="350" />
                 <h3 class="service-title">Planting</h3>
                 <p class="service-description">Lorem Ipsum has been the industry</p>
               </a>
             </li>
-            <li class="service-item">
+            <li class="service-item" data-value="lawn">
               <a href="" class="link service-link">
                 <img class="service-img" src="./assets/content/spray.jpg" alt="women do something" width="329" height="350" />
                 <h3 class="service-title">Lawn care</h3>
                 <p class="service-description">Lorem Ipsum has been the industry</p>
               </a>
             </li>
-            <li class="service-item">
+            <li class="service-item" data-value="planting">
               <a href="" class="link service-link">
                 <img class="service-img" src="./assets/content/roses.jpg" alt="women do something" width="329" height="350" />
                 <h3 class="service-title">Planting</h3>
                 <p class="service-description">Lorem Ipsum has been the industry</p>
               </a>
             </li>
-            <li class="service-item">
+            <li class="service-item" data-value="garden">
               <a href="" class="link service-link">
                 <img class="service-img" src="./assets/content/sukkulents.jpg" alt="women do something" width="329" height="350" />
                 <h3 class="service-title">Garden care</h3>
                 <p class="service-description">Lorem Ipsum has been the industry</p>
               </a>
             </li>
-            <li class="service-item">
+            <li class="service-item" data-value="planting">
               <a href="" class="link service-link">
                 <img class="service-img" src="./assets/content/kaktuses.jpg" alt="women do something" width="329" height="350" />
                 <h3 class="service-title">Planting</h3>
@@ -164,9 +164,33 @@
         <div class="price-wrapper wrapper">
           <h2 class="section-title prices-title">Prices</h2>
           <div class="prices-variants">
-            <button class="btn btn-prices">Basics <span class="accordion-btn accordion-btn_price"></span></button>
-            <button class="btn btn-prices">Standart <span class="accordion-btn accordion-btn_price"></span></button>
-            <button class="btn btn-prices">Pro care <span class="accordion-btn accordion-btn_price"></span></button>
+            <button class="btn btn-prices " data-value="basic">Basics <span class="accordion-btn accordion-btn_price"></span></button>
+            <div class="summary" data-value="basic">
+              <div class="line"></div>
+              <div class="price-description">
+                Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+              </div>
+              <p class="price-count">$15 <span class="rate">/ per hour</span></p>
+              <a class="btn order-btn" href="#contacts">Order</a>
+            </div>
+            <button class="btn btn-prices" data-value="standart">Standart <span class="accordion-btn accordion-btn_price"></span></button>
+            <div class="summary" data-value="standart">
+              <div class="line"></div>
+              <div class="price-description">
+                Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+              </div>
+              <p class="price-count">$25 <span class="rate">/ per hour</span></p>
+              <a class="btn order-btn" href="#contacts">Order</a>
+            </div>
+            <button class="btn btn-prices" data-value="pro">Pro care <span class="accordion-btn accordion-btn_price"></span></button>
+            <div class="summary" data-value="pro">
+              <div class="line"></div>
+              <div class="price-description">
+                Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+              </div>
+              <p class="price-count">$35 <span class="rate">/ per hour</span></p>
+              <a class="btn order-btn" href="#contacts">Order</a>
+            </div>
           </div>
         </div>
         <div class="contact-form">
@@ -177,13 +201,24 @@
       <section class="section contacts" id="contacts">
         <div class="contacts-wrapper wrapper">
           <h2 class="section-title contacts-title"><span class="coloring-green">Contact us</span></h2>
-          <button class="btn city-btn">City <span class="accordion-btn accordion-btn_city"></span></button>
-          <ul class="list city-list">
-            <li class="city-item" data-value="Canandaigua" hidden>Canandaigua, NY</li>
-            <li class="city-item" data-value="New York City" hidden>New York City</li>
-            <li class="city-item" data-value="Yonkers" hidden>Yonkers, NY</li>
-            <li class="city-item" data-value="Sherrill" hidden>Sherrill, NY</li>
+          <div class="btn-wrapper"><button class="btn city-btn">City</button><span class="accordion-btn accordion-btn_city"></span></div>
+          <ul class="list city-list hidden">
+            <li class="city-item" data-value="Canandaigua, NY">Canandaigua, NY</li>
+            <li class="city-item" data-value="New York City">New York City</li>
+            <li class="city-item" data-value="Yonkers, NY">Yonkers, NY</li>
+            <li class="city-item" data-value="Sherrill, NY">Sherrill, NY</li>
           </ul>
+          <div class="city-card non-displayed">
+            <dl class="city-contacts">
+              <dt>City:</dt>
+              <dd class="city-name"></dd>
+              <dt>Phone:</dt>
+              <dd class="phone-number"></dd>
+              <dt>Office adress:</dt>
+              <dd class="adress"></dd>
+            </dl>
+            <a class="link actual-call" href="tel: +1	212	456 0002">Call us</a>
+          </div>
         </div>
       </section>
     </main>
@@ -199,22 +234,26 @@
         <li class="list-item socialmedia-item">
           <a class="link footer-link link-insta" href="https://www.instagram.com/"
             ><svg class="socialmedia-icon insta-icon" width="32" height="32">
-              <use href="#insta"></use></svg></a>
+              <use href="#insta"></use></svg
+          ></a>
         </li>
         <li class="list-item socialmedia-item">
           <a class="link footer-link link-fb" href="https://facebook.com/"
             ><svg class="socialmedia-icon fb-icon" width="32" height="32">
-              <use href="#fb"></use></svg></a>
+              <use href="#fb"></use></svg
+          ></a>
         </li>
         <li class="list-item socialmedia-item">
           <a class="link footer-link link-twitter" href="https://twitter.com/"
             ><svg class="socialmedia-icon twitter-icon" width="32" height="32">
-              <use href="#twitter"></use></svg></a>
+              <use href="#twitter"></use></svg
+          ></a>
         </li>
         <li class="list-item socialmedia-item">
           <a class="link footer-link link-pinterest" href="https://www.pinterest.com/"
             ><svg class="socialmedia-icon pinterest-icon" width="32" height="32">
-              <use href="#pinterest"></use></svg></a>
+              <use href="#pinterest"></use></svg
+          ></a>
         </li>
       </ul>
     </footer>

@@ -13,6 +13,61 @@
     max-width: 330px;
   }
 
+  .city-list {
+    height: 250px;
+    max-width: 300px;
+    padding: 23px 35px;
+  }
+
+  .city-card {
+    width: 282px;
+    height: 212px;
+    padding: 23px 36px;
+    margin-bottom: 33px;
+  }
+
+  .city-contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 17px;
+
+    letter-spacing: 0.05em;
+    line-height: 250%;
+
+    background: var(--bg);
+  }
+
+  dt {
+    min-width: 0;
+    max-width: 64px;
+  }
+
+  dd {
+    margin: 0;
+    max-width: 144px;
+  }
+
+  .adress,
+  dt:last-of-type {
+    margin-top: 10px;
+    line-height: 125%;
+  }
+
+  .actual-call {
+    background-color: var(--bg);
+  }
+
+  .summary {
+    margin-top: -66px;
+  }
+
+  .contacts-wrapper.bg-hidden {
+    background: var(--bg);
+  }
+
   .contact-form {
     max-width: 330px;
   }
@@ -149,6 +204,10 @@
     line-height: 20px;
   }
 
+  .summary {
+    margin-top: -57px;
+  }
+
   .contact-form {
     width: 230px;
     margin: auto;
@@ -189,7 +248,7 @@
   }
 
   .contacts-title {
-    margin: 0 auto 80px;
+    margin: 0 auto 33px;
   }
 
   .city-btn {
@@ -210,4 +269,9 @@
   .link-RSS {
     margin-top: 10px;
   }
+}
+
+.hidden {
+  height: 0;
+  padding: 0;
 }
