@@ -35,7 +35,7 @@
   --middlegray: #717171;
   --darkgray: #636060;
   --bg: #edf2ec;
-  --bg-city: #dce9d9;
+  --bg-city: rgba(220, 233, 217, 0.9);
   --black: #010201;
 }
 
@@ -97,12 +97,16 @@ html {
 .btn:hover {
   color: #ffffff;
   background-color: var(--orange);
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .btn.active {
   color: #ffffff;
   background-color: var(--orange);
+}
+
+.btn.active:hover {
+  opacity: 1;
 }
 
 .non-displayed {

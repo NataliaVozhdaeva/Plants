@@ -41,10 +41,12 @@ createCityCard = (key) => {
   const city = document.querySelector('.city-name');
   const phone = document.querySelector('.phone-number');
   const adress = document.querySelector('.adress');
+  const actualCall = document.querySelector('.actual-call');
 
   city.textContent = key;
   adress.textContent = data[key]['office adress'];
   phone.textContent = data[key]['phone'];
+  actualCall.setAttribute('href', 'tel:' + data[key]['phone']);
 };
 
 const getCity = (e) => {
